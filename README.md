@@ -1,4 +1,3 @@
-# zoomcampdataengg
 # Introduction
 
 * [![](https://markdown-videos-api.jorgenkh.no/youtube/AtRhA-NfS24)](https://www.youtube.com/watch?v=AtRhA-NfS24&list=PL3MmuxUbc_hKihpnNQ9qtTmWYy26bPrSb&index=3)
@@ -29,10 +28,10 @@ if you have troubles setting up the environment and following along with the vid
 [![](https://markdown-videos-api.jorgenkh.no/youtube/2JM-ziJt0WI)](https://youtu.be/2JM-ziJt0WI&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=5)
 
 * Running Postgres locally with Docker ✅
-* Using `pgcli` for connecting to the database
-* Exploring the NY Taxi dataset
-* Ingesting the data into the database
-
+* Using `pgcli` for connecting to the database✅
+* Exploring the NY Taxi dataset✅
+* Ingesting the parquet data  in chunks into the database✅
+  
 > [!TIP]
 >if you have problems with `pgcli`, check this video for an alternative way to connect to your database in jupyter notebook and pandas.
 >
@@ -43,17 +42,17 @@ if you have troubles setting up the environment and following along with the vid
 
 [![](https://markdown-videos-api.jorgenkh.no/youtube/hCAIVe9N0ow)](https://youtu.be/hCAIVe9N0ow&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=7)
 
-* The pgAdmin tool
-* Docker networks
+* The pgAdmin tool✅
+* Docker networks✅
 
 
 > [!IMPORTANT]
 >The UI for PgAdmin 4 has changed, please follow the below steps for creating a server:
 >
->* After login to PgAdmin, right click Servers in the left sidebar.
->* Click on Register.
->* Click on Server.
->* The remaining steps to create a server are the same as in the videos.
+>* After login to PgAdmin, right click Servers in the left sidebar.✅
+>* Click on Register.✅
+>* Click on Server.✅
+>* The remaining steps to create a server are the same as in the videos.✅
 
 
 ## :movie_camera: Putting the ingestion script into Docker
