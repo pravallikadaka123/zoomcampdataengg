@@ -59,3 +59,27 @@ which jupyter-nbconvert
 /Users/pravallika/anaconda3/bin/jupyter-nbconvert
 (base) pravallika@RamMohaeddysAir 2_docker_sql % /Users/pravallika/anaconda3/bin/jupyter-nbconvert --to script upload-data.ipynb
 
+#for pgadmin
+pgcli -h localhost -p 5432 -u root -d ny_taxi
+/dt--->to see db
+docker run -it \
+      -e PGADMIN_DEFAULT_EMAIL="admin@admin.com" \
+      -e PGADMIN_DEFAULT_PASSWORD="root" \
+      -p 8080:80 \
+      --network=pg-network \
+      --name pgadminnew \
+      dpage/pgadmin4
+#for jupyter notebook
+ jupyter notebook
+#for postgres
+docker network create pg-network
+
+ocker run -it \
+    -e POSTGRES_USER=root \
+    -e POSTGRES_PASSWORD=root \
+    -e POSTGRES_DB=ny_taxi \
+    -v /Users/pravallika/Documents/basics/2_docker_sql/ny_taxi_postgres_data:/var/lib/postgresql/data \
+    -p 5432:5432 \
+    --network=pg-networknew \
+    --name pg-databasenew \
+    postgres:13
